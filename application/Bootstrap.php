@@ -28,7 +28,7 @@ class Bootstrap extends Yaf_Bootstrap_Abstract{
      */
     public function _initRoute(Yaf_Dispatcher $dispatcher) {
         $router = Yaf_Dispatcher::getInstance()->getRouter();
-        $route = new Yaf_Route_Rewrite('open.regUser.json',array('module'=>'','controller' => 'RegUser','action' => 'reg'));
+        $route = new Yaf_Route_Rewrite('open/regUser.json',array('module'=>'','controller' => 'RegUser','action' => 'reg'));
         $router->addRoute('product', $route);
     }
 
